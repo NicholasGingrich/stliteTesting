@@ -1,8 +1,8 @@
 ## Steps to Run the Stlite App
 
-1. Navigate to the `stliteTesting/stlite_browser` directory:
+1. Navigate to the MRE dir directory, eg.:
     ```bash
-    cd stliteTesting/stlite_browser
+    cd stliteTesting/stlite_browser_broken_spinner
     ```
 
 2. Install the required dependencies:

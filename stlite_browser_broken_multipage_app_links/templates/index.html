@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <title>Stlite Browser App</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@stlite/browser@0.78.0/build/style.css"/>
+        <body>
+            <div id="root"></div>
+            <script type="module">
+                import * as stlite from "https://cdn.jsdelivr.net/npm/@stlite/browser@0.78.0/build/stlite.js";
+
+                stlite.mount(
+                    {
+                        entrypoint: "homepage.py",
+                        requirments: [],
+                        files: {
+                            "homepage.py": {
+                                url: "static/homepage.py"
+                            },
+                            "pages/page1.py": {
+                                url: "static/page1.py"
+                            },
+                            "pages/page2.py": {
+                                url: "static/page2.py"
+                            }
+                        }
+                    },
+                    document.getElementById("root")
+                )
+            </script>
+        </body>
+    </head>
+</html>
