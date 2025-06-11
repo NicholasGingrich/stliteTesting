@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <title>Stlite Browser App</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@stlite/browser@0.80.4/build/style.css"/>
+        <body>
+            <div id="root"></div>
+            <script type="module">
+                import * as stlite from "https://cdn.jsdelivr.net/npm/@stlite/browser@0.80.4/build/stlite.js";
+
+                stlite.mount(
+                    {
+                        entrypoint: "homepage.py",
+                        requirments: [],
+                        files: {
+                            "homepage.py": {
+                                url: "static/homepage.py"
+                            },
+                            "pages/page1.py": {
+                                url: "static/page1.py"
+                            },
+                            "pages/page2.py": {
+                                url: "static/page2.py"
+                            },
+                            "pages/page3.py": {
+                                url: "static/page3.py"
+                            },
+                            "pages/page4.py": {
+                                url: "static/page4.py"
+                            },
+                            "pages/page5.py": {
+                                url: "static/page5.py"
+                            },
+                            "pages/page6.py": {
+                                url: "static/page6.py"
+                            },
+                            "pages/page7.py": {
+                                url: "static/page7.py"
+                            },
+                            "pages/page8.py": {
+                                url: "static/page8.py"
+                            },
+                            "pages/page9.py": {
+                                url: "static/page9.py"
+                            },
+                        }
+                    },
+                    document.getElementById("root")
+                )
+            </script>
+        </body>
+    </head>
+</html>
